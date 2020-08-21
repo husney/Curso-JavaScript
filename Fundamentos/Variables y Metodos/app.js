@@ -76,6 +76,74 @@ const pi = 3.1415;
 
 //console.log(Math.random());
 
-var dato = "un dato";
-console.log(typeof dato);
+//var dato = "un dato";
+//console.log(typeof dato);
+
+
+let valor; //Undefined
+
+valor = "String" //String
+
+//Number
+valor = 5;
+valor = 10.5;
+valor = -5;
+
+valor = true; //Boolean
+
+//Array (Object)
+valor = [1,2,3,4,5];
+
+valor = null; //Null (Sin valor "Tipo Object")
+
+valor = Symbol("Simbolo"); //Symbol
+
+
+
+valor = new Date(); // Date (Object)
+
+
+/*
+    OPERADORES DE COMPARACIÓN
+
+    == igual (Compara valores) (1 == "1") == true
+    === identico (Compara valores y tipo de dato) (1 === "1") == false 
+    > mayor que (2 > 1) == true
+    < menor que (1 < 2 ) == true
+    >= Mayor o igual que ( 2 >= 2 ) == true (2 >= 3) == true
+    <= menor o igual que ( 3 <= 3 ) == true (1 <= 3) == true 
+    != diferente ( 3 != 2 ) == true
+     
+*/
+
+let numero1 = 10;
+
+//Casteo a tipos de dato Number(int, dobule, decimal, long, float, byte)
+//parseInt(número) "Números Enteros"
+//Number(número)
+//parseFloat(número) "Números Flotantes (deciamales)"
+
+
+//número.toFixed(decimales) Regresa el número con decimales SOLO FUNCIONA CON NÚMEROS
+
+//Conversión de Número a String
+//String(número) Convierte el número a un tipo String
+//.toString() converite un valor a String
+let numero2 = "20";
+
+let casteo1 = Number(numero2);
+let caste2 = parseInt(numero2);
+
+let numero3 = 123;
+    numero3 = String(numero3);
+
+
+let dato = true;
+    dato = dato.toString();
+
+    console.log(dato);
+    console.log(typeof dato);
+
+
+
 
