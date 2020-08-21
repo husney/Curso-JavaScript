@@ -67,7 +67,15 @@ const pi = 3.1415;
 
     numero = Math.random();
 
+//Orden de las operaciones
+// 1 ( ) Raices
+// 2 * / %
+// 3 + -  
 
 
-console.log(Math.random());
+
+//console.log(Math.random());
+
+var dato = "un dato";
+console.log(typeof dato);
 
