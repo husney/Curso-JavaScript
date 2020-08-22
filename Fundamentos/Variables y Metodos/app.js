@@ -71,6 +71,7 @@ const pi = 3.1415;
 // 1 ( ) Raices
 // 2 * / %
 // 3 + -  
+<<<<<<< HEAD
 
 
 
@@ -146,4 +147,13 @@ let dato = true;
 
 
 
+=======
+
+
+
+//console.log(Math.random());
+
+var dato = "un dato";
+console.log(typeof dato);
+>>>>>>> 6967bfa68171dd1b8f042c3191f0e63ad7d638db
 
