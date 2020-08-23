@@ -43,7 +43,10 @@ if(totalCarrito <= efectivo){
     console.log("No puede pagar");
 }
 
+//(si es verdadero) ? entonces hace : si no es verdadero entonces ;
+
 //Operador Ternario
+
 let logueado = true;
 logueado = (logueado == true) ? "Conectado" : "Desconectado" ;
 
