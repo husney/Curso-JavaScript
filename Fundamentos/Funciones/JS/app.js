@@ -81,11 +81,15 @@ const musica ={
     }
 }
 
+//Función creada fuera del objeto
+
 musica.borrar = function(id){
     console.log(`Canción No ${id} borrada`);
 }
 
 musica.borrar(5);
+
+
 
 
 
