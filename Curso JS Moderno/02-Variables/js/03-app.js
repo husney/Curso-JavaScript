@@ -1,2 +1,2 @@
 const b = "Hola"
-console.log(b)
+console.log(b) 
