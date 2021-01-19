@@ -9,6 +9,6 @@ for(dato in objeto){
 }
 
 for(let [llave, valor] of Object.entries(objeto)){
-    console.log(valor);
-    console.log(llave);    
+    console.log(llave);
+    console.log(valor);        
 }

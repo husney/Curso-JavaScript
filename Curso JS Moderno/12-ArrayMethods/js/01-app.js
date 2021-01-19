@@ -7,4 +7,21 @@ const carrito = [
     { nombre: 'Audifonos', precio: 300 },
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
-]
+];
+
+//Comprobar si un valor existe en un array
+
+meses.forEach(mes =>{
+    if (mes === "Enero"){
+        console.log("Enero Si Existe");
+    }
+});
+
+const resultado = meses.includes('Enero');
+console.log(resultado);
+console.log("----");
+
+// En arrreglo de objetos se usa .some
+const existe = carrito.some( producto => producto.nombre === 'Teclado' );
+
+console.log(existe);  
