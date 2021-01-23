@@ -328,3 +328,8 @@ main > section {
 .sociales ul li span{
     display: none;
 }
+
+.cambio{
+    background: rgb(67, 226, 213);
+    transition: all 4s ease;
+}
