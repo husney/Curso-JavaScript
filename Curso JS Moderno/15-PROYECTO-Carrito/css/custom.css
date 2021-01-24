@@ -180,3 +180,21 @@ display: block;
 margin-bottom: 10px;
 text-decoration: none;
 }
+
+.contenedorCursoCarrito{
+    width: 100%;
+    background: red;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.eliminarCurso{
+    padding: 5px;
+    color: #ccc;
+    text-decoration: none;
+    background: red;
+    border-radius: 80%;
+}
+
