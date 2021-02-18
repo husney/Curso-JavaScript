@@ -14,7 +14,7 @@ h1, h2 {
 }
 
 .error {
-    background-color: red;
+    background-color: rgb(207, 98, 98);
     text-align: center;
     padding: 10px;
     text-transform: uppercase;
@@ -22,4 +22,5 @@ h1, h2 {
     max-width: 400px;
     margin: 0 auto;
     color: white;
+    border-radius: 20px;    
 }
