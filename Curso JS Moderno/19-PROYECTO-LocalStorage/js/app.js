@@ -97,8 +97,7 @@ function crearHtml(){
 function borrarTweet(id){
     tweets = tweets.filter( tweet => tweet.id != id);
     console.log(tweets);
-    crearHtml();
-    sincronizarStorage();
+    crearHtml();    
 }
 
 //#endregion
