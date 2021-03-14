@@ -218,7 +218,7 @@ function nuevaCita(e){
    }else{
     historial.editarCita({...Cita});
     ui.imprimirAlerta("Cita actualizada", "success");
-    btnCrearCita.textContent ='Crear cita';
+    btnCrearCita.textContent  ='Crear cita';
     editando = false;
    }
     debugger;
