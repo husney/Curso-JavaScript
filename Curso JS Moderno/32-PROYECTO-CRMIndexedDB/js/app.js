@@ -52,8 +52,7 @@
     db.onsuccess = () => {
       DB = db.result;
       const objectStore = DB.transaction(["clientes"], "readonly").objectStore(
-        "clientes"
-      );
+        "clientes");
 
       objectStore.openCursor().onsuccess = function (e) {
         const cursor = e.target.result;
@@ -121,7 +120,6 @@
             objectStore.delete(id);
 
             transaction.oncomplete = ()=>{
-                //window.location.href = 'index.html';
                 e.target.parentElement.parentElement.remove();
             }
 
