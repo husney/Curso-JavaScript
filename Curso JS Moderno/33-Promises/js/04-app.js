@@ -33,18 +33,60 @@
 
 // console.log('---------------');
 
-let y = 10;
+// let y = 10;
 
-const promesa = new Promise((resolve, reject) =>{
-    setTimeout(()=>{
-        y = y * 10;
-        console.log('Inicio de operación');
-        resolve(y);
-    }, 2000);
-});
+// const promesa = new Promise((resolve, reject) =>{
+//     setTimeout(()=>{
+//         y = y * 10;
+//         console.log('Inicio de operación');
+//         resolve(y);
+//     }, 2000);
+// });
   
-console.log('Inicio');
+// console.log('Inicio');
 
-promesa.then( respuesta =>{
-    console.log('El resultado es: ' + respuesta);
+// promesa.then( respuesta =>{
+//     console.log('El resultado es: ' + respuesta);
+// })
+
+const paises = [];
+
+const agregarPaises = pais => new Promise((resolve, reject) =>{
+    
+    setTimeout(()=>{
+        paises.push(pais);
+        resolve(`Se agrego el pais: ${pais}`);
+    }, 2000);
+}); 
+
+function agregarPais(pais){
+    return new Promise((resolve, reject)=>{
+        setTimeout(() =>{
+            paises.push(pais);
+            resolve(`Se agrego el pais: ${pais}`)
+        }, 2000);
+    });
+}
+
+
+// agregarPaises('Canada')
+//     .then( rs =>{
+//         console.log(rs);
+//         return agregarPaises('Inglaterra');
+//     })
+//     .then( rs =>{
+//         console.log(rs);
+//         return agregarPaises('Suiza')
+//     })
+//     .then(rs => {
+//         console.log(rs);
+//     })
+
+agregarPais('Canada')
+.then(rs =>{
+    console.log(rs);
+    return agregarPais('Inglaterra');
+})
+.then(rs =>{
+    console.log(rs);
 })
