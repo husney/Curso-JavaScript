@@ -8,3 +8,11 @@ const carrito = [
     { nombre: 'Bocinas', precio: 300},
     { nombre: 'Laptop', precio: 800},
 ];
+
+const fNombres = p => p.nombre;
+const nombres = carrito.map(fNombres);
+console.log(nombres);
+
+const fMayor400 = p => p.precio > 400;
+const rProductos = carrito.filter(fMayor400);
+console.log(rProductos);
